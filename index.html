@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
+  
 <body>
   <main class="invitation">
     <div class="corner top-left" aria-hidden="true">❧</div>
@@ -42,28 +43,71 @@
       </div>
     </section>
 
-    <section class="details" aria-label="Detalles del evento">
-      <article class="detail">
-        <div class="detail-icon" aria-hidden="true">♡</div>
-        <h2>Fecha y hora</h2>
-        <p id="fecha"></p>
-        <p id="hora"></p>
-      </article>
-      <article class="detail">
-        <div class="detail-icon" aria-hidden="true">♰</div>
-        <h2>Ceremonia</h2>
-        <p id="iglesia"></p>
-        <p id="direccionIglesia"></p>
-        <a id="mapaIglesia" class="map-link" target="_blank" rel="noopener noreferrer" hidden>Ver ubicación</a>
-      </article>
-      <article class="detail">
-        <div class="detail-icon" aria-hidden="true">❦</div>
-        <h2>Recepción</h2>
-        <p id="recepcion"></p>
-        <p id="direccionRecepcion"></p>
-        <a id="mapaRecepcion" class="map-link" target="_blank" rel="noopener noreferrer" hidden>Ver ubicación</a>
-      </article>
-    </section>
+    
+    
+<section class="details" aria-label="Detalles del evento">
+
+  <!-- FECHA Y HORA -->
+  <details class="detail">
+    <summary>
+      <span class="detail-icon" aria-hidden="true">♡</span>
+      <span class="detail-title">Fecha y hora</span>
+      <span class="detail-arrow" aria-hidden="true">⌄</span>
+    </summary>
+
+    <div class="detail-content">
+      <p id="fecha"></p>
+      <p id="hora"></p>
+    </div>
+  </details>
+
+  <!-- CEREMONIA -->
+  <details class="detail">
+    <summary>
+      <span class="detail-icon" aria-hidden="true">♰</span>
+      <span class="detail-title">Ceremonia</span>
+      <span class="detail-arrow" aria-hidden="true">⌄</span>
+    </summary>
+
+    <div class="detail-content">
+      <p id="iglesia"></p>
+      <p id="direccionIglesia"></p>
+
+      <a id="mapaIglesia"
+         class="map-link"
+         target="_blank"
+         rel="noopener noreferrer"
+         hidden>
+        Ver ubicación
+      </a>
+    </div>
+  </details>
+
+  <!-- RECEPCIÓN -->
+  <details class="detail">
+    <summary>
+      <span class="detail-icon" aria-hidden="true">❦</span>
+      <span class="detail-title">Recepción</span>
+      <span class="detail-arrow" aria-hidden="true">⌄</span>
+    </summary>
+
+    <div class="detail-content">
+      <p id="recepcion"></p>
+      <p id="direccionRecepcion"></p>
+
+      <a id="mapaRecepcion"
+         class="map-link"
+         target="_blank"
+         rel="noopener noreferrer"
+         hidden>
+        Ver ubicación
+      </a>
+    </div>
+  </details>
+
+</section>
+
+    
     <footer>
       <div class="ornament" aria-hidden="true"><span></span>♡<span></span></div>
       <p id="despedida"></p>
