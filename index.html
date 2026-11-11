@@ -1,1 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8f5ee" />
+  <meta name="description" content="Invitación a una celebración familiar especial" />
+  <title>Una celebración especial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="invitation">
+    <div class="corner top-left" aria-hidden="true">❧</div>
+    <div class="corner top-right" aria-hidden="true">❧</div>
+    <div class="corner bottom-left" aria-hidden="true">❧</div>
+    <div class="corner bottom-right" aria-hidden="true">❧</div>
+    <header class="hero">
+      <div class="cross" aria-hidden="true">✝</div>
+      <div class="dove" aria-hidden="true">🕊</div>
+      <p class="verse" id="frase"></p>
+      <div class="ornament" aria-hidden="true"><span></span>♡<span></span></div>
+      <p class="eyebrow">Te invitamos a celebrar</p>
+      <h1 id="tipoEvento"></h1>
+      <p class="de">de</p>
+      <div class="names" id="nombres"></div>
+      <div class="flourish" aria-hidden="true">❦</div>
+      <p class="intro" id="mensaje"></p>
+    </header>
 
+    <section class="family" aria-label="Familia y padrinos">
+      <div class="family-block">
+        <h2>Con el amor de nuestros padres</h2>
+        <p id="padres"></p>
+      </div>
+      <div class="family-block">
+        <h2>Y acompañadas por nuestros padrinos</h2>
+        <p id="padrinos"></p>
+      </div>
+    </section>
+
+    <section class="details" aria-label="Detalles del evento">
+      <article class="detail">
+        <div class="detail-icon" aria-hidden="true">♡</div>
+        <h2>Fecha y hora</h2>
+        <p id="fecha"></p>
+        <p id="hora"></p>
+      </article>
+      <article class="detail">
+        <div class="detail-icon" aria-hidden="true">♰</div>
+        <h2>Ceremonia</h2>
+        <p id="iglesia"></p>
+        <p id="direccionIglesia"></p>
+        <a id="mapaIglesia" class="map-link" target="_blank" rel="noopener noreferrer" hidden>Ver ubicación</a>
+      </article>
+      <article class="detail">
+        <div class="detail-icon" aria-hidden="true">❦</div>
+        <h2>Recepción</h2>
+        <p id="recepcion"></p>
+        <p id="direccionRecepcion"></p>
+        <a id="mapaRecepcion" class="map-link" target="_blank" rel="noopener noreferrer" hidden>Ver ubicación</a>
+      </article>
+    </section>
+    <footer>
+      <div class="ornament" aria-hidden="true"><span></span>♡<span></span></div>
+      <p id="despedida"></p>
+      <div class="flourish" aria-hidden="true">❦</div>
+    </footer>
+  </main>
+</body>
+</html>
