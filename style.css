@@ -273,7 +273,7 @@ body {
 ===================================== */
 
 .details {
-  position: relative;
+  /*position: relative;
   z-index: 2;
 
   display: grid;
@@ -283,7 +283,7 @@ body {
 
 .detail {
   padding: 10px 15px;
-  min-width: 0;
+  min-width: 0;*/
 }
 
 .detail + .detail {
@@ -291,9 +291,9 @@ body {
 }
 
 .detail-icon {
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;
   color: var(--rosa-viejo);
-  font-size: 32px;
+  font-size: 32px;*/
 }
 
 .detail h2 {
