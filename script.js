@@ -1,6 +1,6 @@
 // EDITA ÚNICAMENTE ESTE OBJETO cuando recibas los datos definitivos.
 const evento = {
-  tipo: 'Mi Primera Comunión', // O: 'Mi Confirmación'
+  tipo: 'Nuestra Primera Comunión', // O: 'Mi Confirmación'
   frase: 'Que la luz de Dios ilumine siempre nuestros corazones y guíe nuestros pasos.',
   nombres: ['Nombre de la niña 1', 'Nombre de la niña 2'],
   mensaje: 'Con mucha alegría, queremos compartir contigo este día tan especial para nuestra familia.',
