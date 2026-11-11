@@ -694,3 +694,8 @@ footer {
   }
 }
 
+
+.countdown {
+  animation: aparecer 1.2s ease both;
+  animation-delay: 0.4s;
+}
