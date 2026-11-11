@@ -61,7 +61,7 @@ evento.nombres.forEach((nombre, i) => {
   nombres.append(elemento);
 });
 
-const fechaBoda = new Date("2026-10-31T18:00:00");
+const fechaBoda = new Date("2027-01-01T00:00:00");
 
 actualizarCuentaRegresiva();
 setInterval(actualizarCuentaRegresiva, 1000);
