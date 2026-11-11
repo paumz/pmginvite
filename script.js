@@ -68,7 +68,7 @@ setInterval(actualizarCuentaRegresiva, 1000);
 
 function actualizarCuentaRegresiva() {
     const ahora = new Date();
-    const diferencia = fechaBoda - ahora;
+    const diferencia = fechaEvento - ahora;
     if (diferencia <= 0) {
         document.getElementById("dias").textContent = "00";
         document.getElementById("horas").textContent = "00";
