@@ -516,3 +516,179 @@ footer {
     transition: none;
   }
 }
+
+
+/* =====================================
+   TARJETAS DESPLEGABLES
+===================================== */
+
+.details {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  margin: 40px auto;
+  align-items: start;
+}
+
+.detail {
+  min-width: 0;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.detail + .detail {
+  border-left: 1px solid rgba(182, 154, 107, 0.5);
+}
+
+/* ENCABEZADO INTERACTIVO */
+
+.detail summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  padding: 15px 5px;
+
+  cursor: pointer;
+  list-style: none;
+
+  transition: transform 0.3s ease;
+}
+
+.detail summary::-webkit-details-marker {
+  display: none;
+}
+
+.detail summary:hover {
+  transform: translateY(-3px);
+}
+
+.detail summary:focus-visible {
+  outline: 2px solid var(--rosa-viejo);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+/* ICONOS */
+
+.detail-icon {
+  color: var(--rosa-viejo);
+  font-size: 32px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.detail summary:hover .detail-icon {
+  transform: scale(1.15);
+}
+
+/* TÍTULOS */
+
+.detail-title {
+  color: var(--dorado);
+
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 19px;
+  font-weight: 600;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* FLECHA */
+
+.detail-arrow {
+  color: var(--rosa-viejo);
+  font-size: 23px;
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+.detail[open] .detail-arrow {
+  transform: rotate(180deg);
+}
+
+/* CONTENIDO DESPLEGABLE */
+
+.detail-content {
+  padding: 5px 5px 20px;
+  animation: desplegar 0.35s ease both;
+}
+
+.detail-content p {
+  margin: 8px 0;
+  font-size: 17px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+/* TARJETA ABIERTA */
+
+.detail[open] .detail-title {
+  color: var(--rosa-viejo);
+}
+
+.detail[open] .detail-icon {
+  color: var(--dorado);
+}
+
+/* ANIMACIÓN */
+
+@keyframes desplegar {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 600px) {
+
+  .details {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 25px;
+  }
+
+  .detail {
+    padding: 12px 10px;
+  }
+
+  .detail + .detail {
+    border-left: none;
+    border-top: 1px solid rgba(182, 154, 107, 0.4);
+  }
+
+  .detail-title {
+    font-size: 20px;
+  }
+
+  .detail-content p {
+    font-size: 19px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .detail summary,
+  .detail-icon,
+  .detail-arrow,
+  .detail-content {
+    animation: none;
+    transition: none;
+  }
+}
+
