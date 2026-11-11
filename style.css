@@ -695,12 +695,105 @@ footer {
 }
 
 
+
+/* =====================================
+   CUENTA REGRESIVA
+===================================== */
+
 .countdown {
-  animation: aparecer 1.2s ease both;
-  animation-delay: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  width: 100%;
+  max-width: 500px;
+  margin: 45px auto;
+
   font-family: 'Cormorant Garamond', serif;
   color: var(--texto);
-  font-size: 22px;
+
+  animation: aparecer 1.2s ease both;
+  animation-delay: 0.45s;
+}
+
+/* CADA UNIDAD DE TIEMPO */
+
+.tiempo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+  min-width: 0;
+  gap: 5px;
+}
+
+/* NÚMEROS */
+
+.tiempo span {
+  display: block;
+
+  color: var(--dorado);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(32px, 6vw, 48px);
   font-weight: 500;
-  letter-spacing: 1px;
+  line-height: 1;
+
+  font-variant-numeric: tabular-nums;
+}
+
+/* UNIDADES */
+
+.tiempo small {
+  color: var(--texto);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  font-weight: 500;
+
+  letter-spacing: 2px;
+}
+
+/* SEPARADORES */
+
+.separador-countdown {
+  align-self: center;
+
+  color: var(--rosa-viejo);
+  font-size: 25px;
+  line-height: 1;
+  margin-top: -15px;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 600px) {
+
+  .countdown {
+    gap: 7px;
+    margin: 35px auto;
+  }
+
+  .tiempo span {
+    font-size: clamp(28px, 8vw, 40px);
+  }
+
+  .tiempo small {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .separador-countdown {
+    font-size: 18px;
+    margin-top: -12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .countdown {
+    animation: none;
+  }
 }
