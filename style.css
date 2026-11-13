@@ -797,3 +797,26 @@ footer {
     animation: none;
   }
 }
+
+/*Fondo*/
+
+.invitation {
+  position: relative;
+  isolation: isolate;
+}
+
+.invitation::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("flores.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  opacity: 0.10;
+
+  pointer-events: none;
+  z-index: -1;
+}
