@@ -824,3 +824,7 @@ footer {
   pointer-events: none;
   z-index: -1;
 }
+
+#imgSisters{
+   width:50%;
+}
