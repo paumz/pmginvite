@@ -812,8 +812,8 @@ footer {
 
   background-image: url("flores.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: center top;
+  background-size: contain;
 
   opacity: 0.10;
 
