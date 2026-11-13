@@ -798,13 +798,17 @@ footer {
   }
 }
 
-/*Fondo*/
+
+/* =====================================
+   FONDO FLORAL DE LA INVITACIÓN
+===================================== */
 
 .invitation {
   position: relative;
   isolation: isolate;
 }
 
+/* Imagen floral transparente */
 .invitation::after {
   content: "";
   position: absolute;
@@ -812,10 +816,10 @@ footer {
 
   background-image: url("flores.png");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 
-  opacity: 0.10;
+  opacity: 0.08;
 
   pointer-events: none;
   z-index: -1;
