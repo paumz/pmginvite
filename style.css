@@ -825,6 +825,6 @@ footer {
   z-index: -1;
 }
 
-#imagenGirls{
-   width:50%;
+img#imagenGirls {
+    width: 50% !important;
 }
