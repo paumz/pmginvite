@@ -114,7 +114,7 @@ body {
 
 .cross {
   color: var(--dorado);
-  /*font-family: Georgia, serif;*/
+  font-family: Georgia, serif;
   font-size: 53px;
   line-height: 1;
   margin-bottom: 12px;
