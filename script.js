@@ -94,3 +94,20 @@ function actualizarCuentaRegresiva() {
     document.getElementById("minutos").textContent = String(minutos).padStart(2, "0");
     document.getElementById("segundos").textContent = String(segundos).padStart(2, "0");
 }
+
+const musica = document.getElementById("musicaFondo");
+const boton = document.getElementById("botonMusica");
+
+boton.addEventListener("click", async () => {
+  if (musica.paused) {
+    try {
+      await musica.play();
+      boton.textContent = "♫ Pausar música";
+    } catch (error) {
+      console.error("No se pudo reproducir el audio:", error);
+    }
+  } else {
+    musica.pause();
+    boton.textContent = "♫ Activar música";
+  }
+});
