@@ -13,6 +13,7 @@ const evento = {
   mapaIglesia: 'https://maps.app.goo.gl/WdWBY2HYVBFEs2Vq8', 
   recepcion: '',
   direccionRecepcion: 'Calle 103 oriente no. 4 Arboledas de Loma Bella',
+  horaRecepcion: '02:00 PM',
   mapaRecepcion: 'https://maps.app.goo.gl/HTFUso5qixRQzbTL9',
   despedida: 'Que Dios bendiga cada paso de nuestras vidas.'
 };
