@@ -1,18 +1,18 @@
 // EDITA ÚNICAMENTE ESTE OBJETO cuando recibas los datos definitivos.
 const evento = {
-  tipo: 'Nuestra Primera Comunión', // O: 'Mi Confirmación'
+  tipo: 'Nuestra Primera Comunión',
   frase: 'Que la luz de Dios ilumine siempre nuestros corazones y guíe nuestros pasos.',
   nombres: ['Danna Paola', 'Didianne'],
   mensaje: 'Con mucha alegría, queremos compartir contigo este día tan especial para nuestra familia.',
   padres: ['Cynthia Paola Muñoz Gómez y Didier Daniel Vázquez Vargas'],
   padrinos: ['Gabriela Castelán Muñoz', 'Cecilia Castelán Muñoz'],
-  fecha: '[16 de Enero de 2027]',
-  hora: '[Hora de la ceremonia]',
-  iglesia: '[Parroquia de San Antonio Abad]',
-  direccionIglesia: '[B 16 de Sept. 10306, Arboledas de Loma Bella, 72474 Heroica Puebla de Zaragoza, Pue.]',
+  fecha: '16 de Enero de 2027',
+  hora: '12:00 PM',
+  iglesia: 'Parroquia de San Antonio Abad',
+  direccionIglesia: 'B 16 de Sept. 10306, Arboledas de Loma Bella, 72474 Heroica Puebla de Zaragoza, Pue.',
   mapaIglesia: 'https://maps.app.goo.gl/WdWBY2HYVBFEs2Vq8', 
-  recepcion: '[Nombre del lugar]',
-  direccionRecepcion: '[Calle 103 oriente no. 4 Arboledas de Loma Bella]',
+  recepcion: '',
+  direccionRecepcion: 'Calle 103 oriente no. 4 Arboledas de Loma Bella',
   mapaRecepcion: 'https://maps.app.goo.gl/HTFUso5qixRQzbTL9',
   despedida: 'Que Dios bendiga cada paso de nuestras vidas.'
 };
