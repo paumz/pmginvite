@@ -44,6 +44,7 @@ ponerTexto('iglesia', evento.iglesia);
 ponerTexto('direccionIglesia', evento.direccionIglesia);
 ponerTexto('recepcion', evento.recepcion);
 ponerTexto('direccionRecepcion', evento.direccionRecepcion);
+ponerTexto('horaRecepcion',evento.horaRecepcion);
 ponerTexto('despedida', evento.despedida);
 ponerMapa('mapaIglesia', evento.mapaIglesia);
 ponerMapa('mapaRecepcion', evento.mapaRecepcion);
