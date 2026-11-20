@@ -873,3 +873,7 @@ footer {
     font-size: 8px;
     color: burlywood;
 }
+
+img#imagenGirls {
+    width: 75%;
+}
