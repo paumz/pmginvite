@@ -9,7 +9,7 @@ const evento = {
   fecha: '16 de Enero de 2027',
   hora: '12:00 PM',
   iglesia: 'Parroquia de San Antonio Abad',
-  direccionIglesia: 'B 16 de Sept. 10306, Arboledas de Loma Bella, 72474 Heroica Puebla de Zaragoza, Pue.',
+  direccionIglesia: '105 Poniente y Privada B 16 de Sept. 10306, Arboledas de Loma Bella, 72474 Heroica Puebla de Zaragoza, Pue.',
   mapaIglesia: 'https://maps.app.goo.gl/WdWBY2HYVBFEs2Vq8', 
   recepcion: '',
   direccionRecepcion: 'Calle 103 oriente no. 4 Arboledas de Loma Bella',
