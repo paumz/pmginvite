@@ -55,7 +55,7 @@ body {
   box-shadow:
     0 12px 45px rgba(102, 86, 90, 0.07);
 
-   isolation: isolate;
+   /*isolation: isolate;*/
 }
 
 .invitation::before {
@@ -824,7 +824,7 @@ footer {
   opacity: 0.24;
 
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
 /* BOTÓN DE MÚSICA */
@@ -872,9 +872,4 @@ footer {
    text-align: right;
     font-size: 8px;
     color: burlywood;
-}
-
-.invitation > * {
-  position: relative;
-  z-index: 1;
 }
