@@ -869,3 +869,10 @@ img#imagenGirls {
 #botonMusica:active {
   transform: scale(0.97);
 }
+
+/*firma*/
+.firma{
+   text-align: right;
+    font-size: 10px;
+    color: burlywood;
+}
