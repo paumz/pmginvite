@@ -1,4 +1,3 @@
-// EDITA ÚNICAMENTE ESTE OBJETO cuando recibas los datos definitivos.
 const evento = {
   tipo: 'Nuestra Primera Comunión',
   frase: 'Que la luz de Dios ilumine siempre nuestros corazones y guíe nuestros pasos.',
