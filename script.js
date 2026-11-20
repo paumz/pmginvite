@@ -4,7 +4,7 @@ const evento = {
   frase: 'Que la luz de Dios ilumine siempre nuestros corazones y guíe nuestros pasos.',
   nombres: ['Danna Paola', 'Didianne'],
   mensaje: 'Con mucha alegría, queremos compartir contigo este día tan especial para nuestra familia.',
-  padres: ['Cynthia Paola Muñoz Gómez y Didier Daniel Vázquez Vargas'],
+  padres: ['Cynthia Paola Muñoz Gómez' , 'Didier Daniel Vázquez Vargas'],
   padrinos: ['Gabriela Castelán Muñoz', 'Cecilia Castelán Muñoz'],
   fecha: '16 de Enero de 2027',
   hora: '12:00 PM',
